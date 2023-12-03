@@ -53,6 +53,9 @@ To perform BM25 retrieval, run the following command:
 
 Replace **&lt;index_path&gt;** with the path to your inverted_index.json file, **&lt;queries_path&gt;** with the path to your queries.txt file, and **&lt;results_path&gt;** with the path to your retrieval_results.txt file.
 
-### Evaluation Metrics Results folder is in the root of the repository. queries.txt is my topics file.
+### Running InteractiveRetrieval
+To begin querying and viewing the LA Times documents, run the following command:
+
+    python3  InteractiveRetrieval.py
 
 

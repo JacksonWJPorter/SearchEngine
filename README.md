@@ -51,4 +51,4 @@ To begin querying and viewing the LA Times documents, run the following command:
 
     python3  InteractiveRetrieval.py
 
-## Topic427RetrievalResults in the root of the repository contains the results of query "UV damage, eyes".
+#### Topic427RetrievalResults in the root of the repository contains the results of query "UV damage, eyes".

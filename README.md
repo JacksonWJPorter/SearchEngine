@@ -2,14 +2,7 @@
 Name: Jackson Porter
 WatIAM Student Id: j6porter
 
-## Description
-This repository contains Three main programs:
-
-- **IndexEngine:** Parses the latimes.gz file, processes its articles, generates metadata for each document, builds an inverted index, and stores two lexicon files mapping from term id to term and vice versa. It then writes the raw contents and metadata files to the directory corresponding with the date in its DOCNO.
-- **GetDoc:** Retrieves a specific document's raw content along with metadata using its DOCNO or Internal Id.
-- **BooleanAND:** Performs Boolean And retrieval, utlizing the inverted index, lexicon, and metadata generated from IndexEngine.py
-
-## How to Build and Run
+## How to Build and Run Programs
 
 ### Prerequisites
 - Ensure you have Python 3.x installed on your machine.

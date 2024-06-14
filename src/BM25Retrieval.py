@@ -42,7 +42,7 @@ def bm25_retrieval(query, inverted_index, doc_lengths, avg_doc_length, N, k1=1.2
             ni = len(term_postings)  # Number documents containing the term
 
             for posting in term_postings:
-                doc_id, term_freq = posting[0], posting[1]
+                doc_id, term_freq = posting[0], posting[1] 
                 doc_length = doc_lengths[doc_id - 1] if 1 <= doc_id <= len(doc_lengths) else 0
 
                 K = k1 * ((1 - b) + b * doc_length / avg_doc_length)

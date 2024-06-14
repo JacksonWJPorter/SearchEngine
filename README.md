@@ -1,6 +1,5 @@
-# MSCI 541: Search Engines
-Name: Jackson Porter
-WatIAM Student Id: j6porter
+# Search Engine
+Jackson Porter
 
 ## How to Build and Run Programs
 

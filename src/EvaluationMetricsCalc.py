@@ -61,8 +61,8 @@ def compute_precision_at_k(relevant_docs, retrieved_docs, k):
 
 def compute_ndcg(relevant_docs, retrieved_docs, k):
     # Calculate NDCG@k
-    ideal_dcg = sum(1 / np.log2(i + 2) for i in range(min(k, len(relevant_docs))))
-    dcg = sum(1 / np.log2(i + 2) if doc in relevant_docs else 0 for i, doc in enumerate(retrieved_docs[:k]))
+    ideal_dcg = sum(1 / np.log2(i + 1) for i in range(min(k, len(relevant_docs))))
+    dcg = sum(1 / np.log2(i + 1) if doc in relevant_docs else 0 for i, doc in enumerate(retrieved_docs[:k]))
     if ideal_dcg == 0:
         return 0.0
     return dcg / ideal_dcg
